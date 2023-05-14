@@ -1,0 +1,157 @@
+.mainPage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .sectionTitle {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .mangaList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .mangaItem {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    margin: 0 10px 20px 0;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .mangaItem:hover {
+    transform: translateY(-10px);
+  }
+  
+  .mangaItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mangaItem .mangaInfo {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+padding: 10px;
+background-color: rgba(0, 0, 0, 0.7);
+color: #fff;
+font-size: 14px;
+font-weight: bold;
+text-align: center;
+opacity: 0;
+transition: opacity 0.2s ease-in-out;
+}
+
+.mangaItem:hover .mangaInfo {
+opacity: 1;
+}
+
+.mangaItem .mangaInfo h3 {
+margin: 0;
+font-size: 18px;
+font-weight: bold;
+text-transform: uppercase;
+margin-bottom: 5px;
+}
+
+.mangaItem .mangaInfo p {
+margin: 0;
+font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+.mangaItem {
+width: 100%;
+margin-right: 0;
+}
+}
+
+.topMangaSection {
+margin-bottom: 60px;
+}
+
+.latestMangaSection {
+margin-bottom: 60px;
+}
+
+.sectionTitle {
+text-align: center;
+}
+
+.sectionTitle span {
+color: #ffce00;
+}
+
+.sectionTitle::after {
+content: "";
+display: block;
+width: 50px;
+height: 2px;
+background-color: #ffce00;
+margin: 10px auto;
+}
+
+.sectionSubtitle {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.sectionSubtitle span {
+color: #ffce00;
+}
+
+.sectionSubtitle::after {
+content: "";
+display: block;
+width: 50px;
+height: 2px;
+background-color: #ffce00;
+margin: 10px auto;
+}
+
+.animation1 {
+animation-name: slide-in-left;
+animation-duration: 1s;
+animation-fill-mode: both;
+}
+
+.animation2 {
+animation-name: slide-in-right;
+animation-duration: 1s;
+animation-fill-mode: both;
+}
+
+@keyframes slide-in-left {
+0% {
+transform: translateX(-100%);
+opacity: 0;
+}
+100% {
+transform: translateX(0);
+opacity: 1;
+}
+}
+
+@keyframes slide-in-right {
+0% {
+transform: translateX(100%);
+opacity: 0;
+}
+100% {
+transform: translateX(0);
+opacity: 1;
+}
+}
+  

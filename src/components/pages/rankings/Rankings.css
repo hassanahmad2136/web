@@ -1,0 +1,36 @@
+.RankingsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 40px;
+  }
+  
+  th,
+  td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  img {
+    max-width: 100px;
+    height: auto;
+  }
+  
