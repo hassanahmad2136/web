@@ -3,7 +3,6 @@
 {
     display: flex ; 
     padding: 2vw 7vw;
-  
 }
 
 .logo
@@ -46,7 +45,6 @@ a
 {
 
     text-align: center;
-    margin-top: 0.5vw;
     margin-left: 2vw;
 
 
@@ -65,7 +63,6 @@ a
     /* font-size: 1.5vw; */
     /* padding: 1vw; */
     font-weight: 300;
-    border-radius: 20vw;
     border-style: none;
     background-color: #757ff1;
     color: rgb(245, 237, 237);

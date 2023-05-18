@@ -1,7 +1,14 @@
+*{
+  box-sizing:border-box;
+  padding:0;
+  margin:0;
+}
 body:not(Dashboard)
 {
+  height:650px;
    background: linear-gradient(48deg, rgba(97,215,182,1) 0%, rgba(255,255,255,1) 46%, rgb(163, 214, 238) 81%);
- 
+   background-repeat: no-repeat;
+   background-size:100%;
 }
 
 .App {
